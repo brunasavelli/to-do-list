@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background: radial-gradient(circle, #c45f5f, #fdbaba);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: rgb(255, 250, 242);
+    height: 30vh;
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px rgb(224, 224, 224);
+}
+
+.input-card {
+    height: 8vh;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    height: 4vh;
+    width: 25vh;
+    border-color: #0000004b;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #fdbaba;
+    height: 4vh;
+    width: 10vh;
+    border: none;
+    border-radius: 10px;
+}
