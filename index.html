@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
 </head>
 <body>
+
     <section class="container">
-        <section class="card">
-            <h2>Lista de Tarefas</h2>
-            <div class="input-card">
-                <input type="text" id="input" placeholder="Adicione uma tarefa...">
-                <button>Adicionar</button>
-            </div>
+        <section class="nova-tarefa-container">
+            <input type="text" class="nova-tarefa-input" placeholder="Adicione uma tarefa...">
+            <button class="nova-tarefa-button">Adicionar</button>
         </section>
+
+        <section class="tasks-container"></section>
+
     </section>
 </body>
 </html>
