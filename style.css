@@ -1,56 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, #c45f5f 0%, #f38f8f 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    background: radial-gradient(circle, #c45f5f, #fdbaba);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 2px solid #fff;
+    padding: 30px 40px;
+    width: 40%;
+    min-width: 500px;
 }
 
-.card {
+.nova-tarefa-container {
     background-color: #fff;
-    opacity: 0.7;
-    height: 30vh;
-    width: 80vh;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px;
-    box-shadow: 5px 5px 5px rgb(224, 224, 224);
 }
 
-.input-card {
-    height: 8vh;
-    width: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.nova-tarefa-container input {
+    flex: 3;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
 }
 
-input {
-    height: 4vh;
-    width: 25vh;
-    border-color: #0000004b;
-    border-radius: 10px;
-    text-align: center;
+.nova-tarefa-container input:focus {
+    outline: none;
+    border-color: #df9898;
 }
 
-button {
-    background-color: #fdbaba;
-    height: 4vh;
-    width: 13vh;
+.nova-tarefa-button {
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
     border: none;
+    background-color: #ce5656;
+    color: #fff;
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.tarefas-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 60px;
     border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
 }
