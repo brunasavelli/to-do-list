@@ -64,3 +64,34 @@ body {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     width: 100%;
 }
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.task-item i {
+    background-color: #ce5656;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.task-item i:hover {
+    cursor: pointer;
+}
+
+.error {
+    border: 2px solid red !important;
+}
+
+.error::placeholder {
+    color: red;
+}
+
+/* .completed {
+    text-decoration: line-through;
+  } */
