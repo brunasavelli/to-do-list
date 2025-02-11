@@ -21,7 +21,7 @@ body {
     border-radius: 5px;
 }
 
-.nova-tarefa-container {
+.nova-tarefa {
     background-color: #fff;
     padding: 30px 20px;
     border-radius: 5px;
@@ -29,7 +29,7 @@ body {
     display: flex;
 }
 
-.nova-tarefa-container input {
+.nova-tarefa input {
     flex: 3;
     font-size: 1rem;
     border: 2px solid #d1d3d4;
@@ -38,7 +38,7 @@ body {
     font-weight: 500;
 }
 
-.nova-tarefa-container input:focus {
+.nova-tarefa input:focus {
     outline: none;
     border-color: #df9898;
 }
@@ -57,7 +57,7 @@ body {
     cursor: pointer;
 }
 
-.tarefas-container {
+.tarefas {
     background-color: #fff;
     padding: 30px 20px;
     margin-top: 60px;
@@ -93,6 +93,6 @@ body {
     color: red;
 }
 
-/* .completed {
+.completed {
     text-decoration: line-through;
-}  */
+} 
