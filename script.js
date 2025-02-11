@@ -10,7 +10,7 @@ const handleAddTask = () => {
 
     console.log(inputIsValid);
 
-    if(!inputElement) {
+    if(!inputIsValid) {
         return inputElement.classList.add("error");
     }
 
@@ -40,21 +40,9 @@ const handleAddTask = () => {
     updateLocalStorage();
 };
 
-const handleClick = (taskContent) => {
-    const tasks = tasksContainer.childNodes.isSameNode(taskContent);
-
-    for (const task of tasks) {
-        const currentTaskIsBeingClicked = task.firstChild.isSameNode(taskContent);
-
-        if(currentTaskIsBeingClicked) {
-            task.firstChild.classList.toggle("completed");
-        }
-    }
-
-    updateLocalStorage();
-};
-
 const handleDeleteClick = (taskItemContainer, taskContent) => {
+    const tasks = tasksContainer.childNodes;
+
     for (const task of tasks) {
         const currentTaskIsBeingClicked = task.firstChild.isSameNode(taskContent);
 
